@@ -6,7 +6,7 @@
           <div class="col-6 text-start">
             <ul>
               <li>
-                <a href="">Dowload App <label for="">ios</label></a>
+                <a href="">Dowload App <label role="button">iOS</label></a>
               </li>
               <li><a href="">Advertise with us</a></li>
             </ul>
@@ -55,6 +55,29 @@
         </div>
       </div>
     </div>
+
+    <div class="jumbotron">
+      <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+          <div
+            class="
+              col-6
+              pick
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
+              text-center
+              position-relative
+            "
+          >
+            <h1>Food Corner: Top Japanese Restaurant for Sushi</h1>
+            <time>March 25, 2019</time>
+            <label>TODAY'S PICK</label>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -69,15 +92,50 @@ export default {
 header {
   background-color: #fff;
 
-  .header-top a {
+  & a {
     color: #afafaf;
     margin: 0 5px;
   }
 
+  & label {
+    background-color: #fc7525;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 0.8rem;
+  }
+
   .header-bottom a {
     color: #000;
+
     &:hover {
       color: #fc7525;
+    }
+  }
+
+  .jumbotron {
+    height: 500px;
+    background-image: url(../assets/img/single-post-img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .pick {
+      height: 200px;
+      background-color: #fff;
+      border-radius: 10px;
+
+      label {
+        padding: 5px 10px;
+        background-color: #fc7525;
+        color: #fff;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translate(50%, -50%);
+      }
     }
   }
 }
