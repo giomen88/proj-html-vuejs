@@ -4,8 +4,10 @@
       <TheHeader />
 
       <main>
+        <!-- banner -->
         <TheBanner />
 
+        <!-- popular-recipes section -->
         <section id="popular-recipes" class="mt-5">
           <div class="container">
             <div class="row">
@@ -17,6 +19,7 @@
                   voluptatibus esse.
                 </p>
               </div>
+              <!-- current-recipe -->
               <div class="col-6 current-recipe">
                 <BaseBigCard
                   :imageSrc="
@@ -28,6 +31,7 @@
                   textButton="LEARN MORE"
                 />
               </div>
+              <!-- recipes-list -->
               <div
                 class="
                   col-6
@@ -48,7 +52,8 @@
           </div>
         </section>
 
-        <section id="popular-recipes" class="mt-5">
+        <!-- culinary-collection section -->
+        <section id="culinary-collection" class="mt-5">
           <div class="container">
             <div class="row">
               <div class="col-6 offset-3 title text-center my-5">
@@ -60,6 +65,7 @@
                 </p>
               </div>
               <div class="col-12 d-flex justify-content-between flex-wrap">
+                <!-- cards -->
                 <BaseSmallCard
                   class="collection-img"
                   v-for="item in collection"
@@ -74,6 +80,7 @@
         </section>
       </main>
 
+      <!-- footer -->
       <TheFooter />
     </div>
   </div>
@@ -203,12 +210,14 @@ export default {
 #app {
   background-color: var(--bgcolor);
 }
+
 .recipes-list {
   margin-top: -10px;
 
   .recipe-img {
     flex-basis: calc(50% - 20px);
     margin: 10px;
+    box-shadow: 0 5px 10px lightgray;
   }
 }
 .collection-img {

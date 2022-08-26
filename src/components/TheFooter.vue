@@ -1,5 +1,6 @@
 <template>
   <footer class="mt-5">
+    <!-- footer-top -->
     <div class="footer-top d-flex">
       <img src="../assets/img/recipes/Yogurt-Nan-1200x790.jpg" alt="" />
       <img src="../assets/img/recipes/Mixed-fruits.jpg" alt="" />
@@ -12,6 +13,7 @@
         alt=""
       />
     </div>
+    <!-- footer-nav -->
     <div class="footer-nav p-5 position-relative">
       <div class="container">
         <div class="row">
@@ -99,6 +101,7 @@
         </div>
       </div>
     </div>
+    <!-- footer-bottom -->
     <div class="footer-bottom p-4 text-center">
       <i class="fa-solid fa-copyright"></i>Copyright 2012 - 2020 | Avada Theme
       by ThemeFusion | All Rights Reserved | Powered by WordPress
@@ -155,6 +158,7 @@ footer {
   .go-up {
     bottom: 20px;
     left: 20px;
+    text-shadow: 0 3px 5px gray;
   }
 }
 </style>

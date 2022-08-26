@@ -1,5 +1,5 @@
 <template>
-  <div class="card big-card border-0">
+  <div class="card big-card border-0 rounded-0">
     <BaseImage :imageSrc="imageSrc" :imageAlt="imageAlt" />
     <div class="text d-flex flex-column justify-content-between p-3">
       <h3>{{ cardTitle }}</h3>

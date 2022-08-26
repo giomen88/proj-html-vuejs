@@ -17,6 +17,7 @@
         <div class="line mx-3"></div>
       </div>
       <div class="col-12 d-flex justify-content-between text-center">
+        <!-- cards -->
         <BaseCard
           v-for="journal in journals"
           :key="journal.id"
@@ -69,6 +70,7 @@ export default {
   background-color: #fff;
   min-height: 100px;
   margin-top: -50px;
+  box-shadow: 0 5px 10px lightgray;
 }
 </style>
   

@@ -1,5 +1,5 @@
 <template>
-  <div class="card border-0 m-3">
+  <div class="card border-0 rounded-0 m-3">
     <BaseImage :imageSrc="imageSrc" :imageAlt="imageAlt" />
     <h3>{{ cardTitle }}</h3>
     <time>{{ cardTime }}</time>
