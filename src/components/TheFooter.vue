@@ -136,12 +136,7 @@ footer {
     color: #000;
   }
 
-  .contact a {
-    color: var(--secondary-textcolor);
-  }
-
   .social-links a {
-    color: var(--secondary-textcolor);
     margin: 0 5px;
   }
 

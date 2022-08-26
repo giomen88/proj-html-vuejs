@@ -95,7 +95,6 @@ header {
   background-color: #fff;
 
   a {
-    color: var(--secondary-textcolor);
     margin: 0 10px;
   }
   .header-top label {
