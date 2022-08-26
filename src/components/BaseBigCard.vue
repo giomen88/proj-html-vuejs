@@ -6,9 +6,11 @@
       <p class="subtitle">{{ cardSubtitle }}</p>
       <div class="line my-3"></div>
       <p class="description">{{ cardDescription }}</p>
-      <a class="button w-25 rounded-1 text-center text-white py-2 px-2">{{
-        textButton
-      }}</a>
+      <a
+        class="button w-25 rounded-1 text-center text-white py-2 px-2"
+        role="button"
+        >{{ textButton }}</a
+      >
     </div>
   </div>
 </template>

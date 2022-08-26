@@ -11,9 +11,9 @@
         <section id="popular-recipes" class="mt-5">
           <div class="container">
             <div class="row">
-              <div class="col-6 offset-3 title text-center my-5">
+              <div class="col-6 offset-3 text-center my-5">
                 <h2 class="fs-5 mb-3">POPULAR RECIPES</h2>
-                <p>
+                <p class="subtitle">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Atque, nostrum animi dolorem nisi sequi eos at nam
                   voluptatibus esse.
@@ -56,9 +56,9 @@
         <section id="culinary-collection" class="mt-5">
           <div class="container">
             <div class="row">
-              <div class="col-6 offset-3 title text-center my-5">
+              <div class="col-6 offset-3 text-center my-5">
                 <h2 class="fs-5 mb-3">CULINARY COLLECTION</h2>
-                <p>
+                <p class="subtitle">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Atque, nostrum animi dolorem nisi sequi eos at nam
                   voluptatibus esse.
@@ -80,10 +80,48 @@
         </section>
 
         <!-- subscribe section -->
-        <section id="subscribe">
+        <section id="subscribe" class="mt-5 p-5">
           <div class="container">
             <div class="row">
-              <div class="col-6 offset-3"></div>
+              <div
+                class="
+                  col-6
+                  offset-3
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h2>Subscribe & Receive a free book</h2>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+                <div class="form d-flex mb-3">
+                  <input
+                    type="email"
+                    class="form-control me-3"
+                    placeholder="Inserisci la tua email"
+                  />
+
+                  <a
+                    class="
+                      button
+                      w-50
+                      rounded-1
+                      text-center text-white
+                      py-2
+                      px-2
+                    "
+                    role="button"
+                    >SUBSCRIBE</a
+                  >
+                </div>
+                <span
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit.</span
+                >
+              </div>
             </div>
           </div>
         </section>
@@ -241,5 +279,14 @@ export default {
   height: 300px;
   background-image: url(./assets/img/subscribe-sec-bg.png);
   background-size: cover;
+
+  h2 {
+    font-family: "Domine", serif;
+  }
+
+  span {
+    color: var(--primary-textcolor);
+    font-size: 0.8rem;
+  }
 }
 </style>

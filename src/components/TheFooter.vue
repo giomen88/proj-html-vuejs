@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-5">
+  <footer class="mt-0">
     <!-- footer-top -->
     <div class="footer-top d-flex">
       <img src="../assets/img/recipes/Yogurt-Nan-1200x790.jpg" alt="" />
