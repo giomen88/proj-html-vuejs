@@ -78,6 +78,15 @@
             </div>
           </div>
         </section>
+
+        <!-- subscribe section -->
+        <section id="subscribe">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 offset-3"></div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <!-- footer -->
@@ -210,7 +219,7 @@ export default {
 #app {
   background-color: var(--bgcolor);
 }
-
+// popular recipes
 .recipes-list {
   margin-top: -10px;
 
@@ -219,9 +228,18 @@ export default {
     margin: 10px;
     box-shadow: 0 5px 10px lightgray;
   }
+
+  // culinary collection
 }
 .collection-img {
   flex-basis: calc(25% - 40px);
   margin: 20px;
+}
+
+// subscribe
+#subscribe {
+  height: 300px;
+  background-image: url(./assets/img/subscribe-sec-bg.png);
+  background-size: cover;
 }
 </style>

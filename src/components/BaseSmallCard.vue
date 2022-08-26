@@ -11,7 +11,7 @@
     "
   >
     <img :src="imageSrc" :alt="imageAlt" class="img-fluid w-50" role="button" />
-    <button class="bg-white border-0 text-dark pb-3">{{ textButton }}</button>
+    <button class="border-0 text-dark p-3 w-100">{{ textButton }}</button>
   </div>
 </template>
 
@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+button {
+  background-color: #fff;
+}
 .small-card:hover button {
   background-color: var(--primarycolor);
 }
