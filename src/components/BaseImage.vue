@@ -1,5 +1,5 @@
 <template>
-  <figure class="position-relative">
+  <figure class="position-relative text-center">
     <img :src="imageSrc" :alt="imageAlt" class="img-fluid" role="button" />
     <div class="hover"><i class="fa-solid fa-link"></i></div>
   </figure>

@@ -1,7 +1,7 @@
 .line {
-    height: 1px;
+    height: 0.5px;
     flex-grow: 1;
-    background-color: #afafaf;
+    background-color: var(--secondary-textcolor);
   }
 
   .card h1, .card h2, .card h3 {
@@ -11,4 +11,13 @@
   time {
     color: var(--primary-textcolor);
   }
+
+  section .title p {
+    color: var(--primary-textcolor);
+  }
+
+  .button {
+    background-color: var(--primarycolor);
+  }
+  
   

@@ -12,9 +12,9 @@
           align-items-center
         "
       >
-        <div class="line"></div>
+        <div class="line mx-3"></div>
         <h3 class="mx-3 fs-5">FOODIE JOURNAL</h3>
-        <div class="line"></div>
+        <div class="line mx-3"></div>
       </div>
       <div class="col-12 d-flex justify-content-between text-center">
         <BaseCard

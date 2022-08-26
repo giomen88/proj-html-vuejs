@@ -47,6 +47,31 @@
             </div>
           </div>
         </section>
+
+        <section id="popular-recipes" class="mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 offset-3 title text-center my-5">
+                <h2 class="fs-5 mb-3">CULINARY COLLECTION</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Atque, nostrum animi dolorem nisi sequi eos at nam
+                  voluptatibus esse.
+                </p>
+              </div>
+              <div class="col-12 d-flex justify-content-between flex-wrap">
+                <BaseSmallCard
+                  class="collection-img"
+                  v-for="item in collection"
+                  :key="item.id"
+                  :imageSrc="item.img"
+                  :imageAlt="item.label"
+                  :textButton="item.label"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <TheFooter />
@@ -60,10 +85,18 @@ import TheBanner from "./components/TheBanner.vue";
 import TheFooter from "./components/TheFooter.vue";
 import BaseImage from "./components/BaseImage.vue";
 import BaseBigCard from "./components/BaseBigCard.vue";
+import BaseSmallCard from "./components/BaseSmallCard.vue";
 
 export default {
   name: "App",
-  components: { TheHeader, TheBanner, TheFooter, BaseImage, BaseBigCard },
+  components: {
+    TheHeader,
+    TheBanner,
+    TheFooter,
+    BaseImage,
+    BaseBigCard,
+    BaseSmallCard,
+  },
 
   data() {
     return {
@@ -117,6 +150,49 @@ export default {
           id: "8",
         },
       ],
+
+      collection: [
+        {
+          img: require("./assets/img/collection/drinks-recipes.png"),
+          label: "DRINKS",
+          id: "1",
+        },
+        {
+          img: require("./assets/img/collection/soups-recipes.png"),
+          label: "SOUPS",
+          id: "2",
+        },
+        {
+          img: require("./assets/img/collection/baking-recipes.png"),
+          label: "BAKERY",
+          id: "3",
+        },
+        {
+          img: require("./assets/img/collection/dinner-recipes.png"),
+          label: "DINNER",
+          id: "4",
+        },
+        {
+          img: require("./assets/img/collection/healthy-recipes.png"),
+          label: "HEALTY",
+          id: "5",
+        },
+        {
+          img: require("./assets/img/collection/staff-picks.png"),
+          label: "STAFF PICKS",
+          id: "6",
+        },
+        {
+          img: require("./assets/img/collection/premium-recipes.png"),
+          label: "APPETISERS",
+          id: "7",
+        },
+        {
+          img: require("./assets/img/collection/quick-easy-recipes.png"),
+          label: "QUICK & EASY",
+          id: "8",
+        },
+      ],
     };
   },
 };
@@ -127,14 +203,16 @@ export default {
 #app {
   background-color: var(--bgcolor);
 }
-#popular-recipes .title p {
-  color: var(--primary-textcolor);
-}
 .recipes-list {
   margin-top: -10px;
+
   .recipe-img {
     flex-basis: calc(50% - 20px);
     margin: 10px;
   }
+}
+.collection-img {
+  flex-basis: calc(25% - 40px);
+  margin: 20px;
 }
 </style>
