@@ -34,7 +34,7 @@
         <div class="row justify-content-center">
           <div class="col-12 text-center">
             <img
-              src="../assets/img/avada-food-logo.png"
+              src="../assets/img/logo/avada-food-logo.png"
               alt="avada-food-logo"
               class="logo img-fluid"
             />
@@ -92,13 +92,13 @@ export default {
 header {
   background-color: #fff;
 
-  & a {
-    color: #afafaf;
-    margin: 0 5px;
+  .header-top a {
+    color: var(--secondary-textcolor);
+    margin: 0 10px;
   }
 
-  & label {
-    background-color: #fc7525;
+  .header-top label {
+    background-color: var(--primarycolor);
     color: #fff;
     border-radius: 5px;
     padding: 0 10px;
@@ -109,16 +109,20 @@ header {
     color: #000;
 
     &:hover {
-      color: #fc7525;
+      color: var(--primarycolor);
     }
   }
 
   .jumbotron {
-    height: 500px;
-    background-image: url(../assets/img/single-post-img3.jpg);
+    height: 550px;
+    background-image: url(../assets/img/images/single-post-img3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    h1 {
+      font-family: "Domine", serif;
+    }
 
     .pick {
       height: 200px;
@@ -127,7 +131,7 @@ header {
 
       label {
         padding: 5px 10px;
-        background-color: #fc7525;
+        background-color: var(--primarycolor);
         color: #fff;
         font-size: 0.8rem;
         border-radius: 5px;
