@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <div class="jumbotron">
+    <div id="jumbotron">
       <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
           <div
@@ -92,11 +92,10 @@ export default {
 header {
   background-color: #fff;
 
-  .header-top a {
+  a {
     color: var(--secondary-textcolor);
     margin: 0 10px;
   }
-
   .header-top label {
     background-color: var(--primarycolor);
     color: #fff;
@@ -113,7 +112,7 @@ header {
     }
   }
 
-  .jumbotron {
+  #jumbotron {
     height: 550px;
     background-image: url(../assets/img/images/single-post-img3.jpg);
     background-repeat: no-repeat;
